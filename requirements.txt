@@ -1,0 +1,9 @@
+streamlit
+openai
+requests
+beautifulsoup4
+readability-lxml
+trafilatura
+PyPDF2
+fpdf
+python-docx
