@@ -2673,15 +2673,19 @@ elif st.session_state['current_main_view'] == 'align_research':
     
     # Removed custom CSS for radio button text color as global theme is applied
     # st.markdown("""
-    # <style>
-    # .stRadio > label {
-    #     color: #FFFFFF !important; /* White color */
-    # }
-    # div[data-testid="stRadio"] label span {
-    #     color: #FFFFFF !important; /* White color */
-    # }
-    # </style>
-    # """, unsafe_allow_html=True)
+    st.markdown(
+        """
+        <style>
+        .stRadio > label {
+            color: #FFFFFF !important;
+        }
+        div[data-testid="stRadio"] label span {
+            color: #FFFFFF !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
     funding_call_option_align = st.radio(
         "How would you like to provide the funding call details for alignment?",
